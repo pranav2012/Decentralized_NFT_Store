@@ -16,9 +16,12 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "components/*": ["src/components/*"]
+      "components/*": ["src/components/*"],
+      "assets/*": ["src/assets/*"],
+      "elements/*": ["src/elements/*"],
+      "lib/*": ["src/lib/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/NFTCard.jsx", "pages/collections/[collectionId].jsx", "pages/nfts/[nftIds].jsx"],
   "exclude": ["node_modules"],
 }
