@@ -2,12 +2,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState, useMemo } from 'react';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
 import { useWeb3 } from '@3rdweb/hooks';
 import { client } from 'lib/sanityClient';
 import { ThirdwebSDK } from '@3rdweb/sdk';
 import Header from 'components/Header';
-import Head from 'components/Head';
 import { CgWebsite } from 'react-icons/cg';
 import { AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai';
 import { HiDotsVertical } from 'react-icons/hi';
@@ -95,6 +93,7 @@ const Collection = () => {
           }`
 
           const collectionData = await sanityClient.fetch(query);
+          console.log(collectionData[0])
         setCollection(collectionData[0])
     }
 useEffect(() => {
@@ -176,7 +175,7 @@ useEffect(() => {
                     <div className={style.collectionStat}>
                     <div className={style.statValue}>
                         <img
-                        src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"
+                        src="https://openseauserdata.com/files/6f8e2979d428180222796ff4a33ab929.svg"
                         alt="eth"
                         className={style.ethLogo}
                         />
@@ -187,11 +186,11 @@ useEffect(() => {
                     <div className={style.collectionStat}>
                     <div className={style.statValue}>
                         <img
-                        src="https://storage.opensea.io/files/6f8e2979d428180222796ff4a33ab929.svg"
+                        src="https://openseauserdata.com/files/6f8e2979d428180222796ff4a33ab929.svg"
                         alt="eth"
                         className={style.ethLogo}
                         />
-                        {collection?.volumeTraded}.5K
+                        {collection?.volumeTraded}
                     </div>
                     <div className={style.statName}>volume traded</div>
                     </div>
