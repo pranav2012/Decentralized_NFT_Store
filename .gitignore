@@ -44,3 +44,4 @@ public/worker-*.js.map
 
 # typescript
 *.tsbuildinfo
+.env

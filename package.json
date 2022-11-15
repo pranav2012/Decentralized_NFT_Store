@@ -1,4 +1,6 @@
 {
+  "name": "bts-opensea-blockchain-v2",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -7,32 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@3rdweb/chain-icons": "^1.0.1",
-    "@3rdweb/hooks": "^1.9.2",
-    "@3rdweb/sdk": "^1.41.0",
-    "@ethersproject/abstract-signer": "^5.6.0",
-    "@ethersproject/properties": "^5.6.0",
-    "@sanity/client": "^3.0.6",
-    "@walletconnect/ethereum-provider": "^1.7.5",
-    "@web3-react/walletlink-connector": "^6.2.13",
-    "next": "latest",
-    "next-pwa": "^5.4.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-hot-toast": "^2.2.0",
+    "@headlessui/react": "^1.6.1",
+    "@heroicons/react": "^1.0.6",
+    "@thirdweb-dev/react": "^2.2.4",
+    "@thirdweb-dev/sdk": "^2.2.1",
+    "ethers": "^5.6.5",
+    "next": "12.1.6",
+    "next-themes": "^0.2.0",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
     "react-icons": "^4.3.1"
   },
   "devDependencies": {
-    "@types/node": "17.0.4",
-    "@types/react": "17.0.38",
-    "autoprefixer": "^10.4.0",
-    "eslint": "8.8.0",
-    "eslint-config-next": "12.0.10",
-    "eslint-config-prettier": "^8.3.0",
-    "postcss": "^8.4.5",
-    "prettier": "^2.5.1",
-    "prettier-plugin-tailwindcss": "^0.1.1",
-    "tailwindcss": "^3.0.7",
-    "typescript": "4.5.4"
+    "autoprefixer": "^10.4.7",
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.6",
+    "postcss": "^8.4.13",
+    "prettier": "^2.6.2",
+    "prettier-plugin-tailwindcss": "^0.1.10",
+    "tailwindcss": "^3.0.24"
   }
 }
